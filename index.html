@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="geogebra-msi-copy.png" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoGebra</title>
+    <style>
+      /* General body styling */
+      body {
+        background-color: rgb(230, 193, 228);
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        --ggb-primary-color: #ee0290; /* Primary UI color */
+        --ggb-primary-variant-color: #880061; /* Hover color for floating buttons */
+        --ggb-dark-color: #880061; /* Highlighted text color */
+        --ggb-light-color: #f186c0; /* Progress bar color */
+        text-align: center; /* Center text content */
+      }
+
+      /* Styling for the GeoGebra applet container */
+      #Graphical {
+        border: 2px solid black;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); /* Subtle shadow for better visibility */
+        width: 800px; /* Fixed width for larger screens */
+        height: 600px; /* Fixed height for larger screens */
+        margin: 20px auto; /* Center horizontally and add spacing */
+        background-color: white; /* Optional: Add a background color */
+      }
+
+      /* Styling for the header */
+      h1 {
+        box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+        border: 1px solid black;
+        padding: 1%;
+        background-color: rgb(117, 3, 142);
+        color: rgb(215, 209, 209);
+        font-size: 1.5rem; /* Adjust font size for better readability */
+        margin: 0 auto; /* Center horizontally */
+        border-radius: 5px; /* Rounded corners for consistency */
+      }
+
+      fieldset {
+        box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+        background-color: rgb(233, 233, 233);
+        border: 2px solid rgb(0, 0, 0); /* Dark border for better visibility */
+        border-radius: 15px; /* Rounded corners for a modern look */
+        margin: 0 auto; /* Center horizontally */
+      }
+
+      article {
+        box-shadow: rgb(0, 0, 0) 0px 0px 20px;
+        background-color: rgb(233, 233, 233);
+        border: 2px solid rgb(0, 0, 0); /* Dark border for better visibility */
+        border-radius: 15px; /* Rounded corners for a modern look */
+        padding: 2%;
+        text-align: left; /* Align text to the left for better readability */
+        margin: 1% auto; /* Center horizontally and add spacing */
+        font-size: 1rem; /* Adjust font size for better readability */
+      }
+      footer, footer > a{
+        margin-top: 2%;
+        color: rgb(0, 0, 0);
+      }
+    </style>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend><h1>GeoGebra - Classic 6</h1></legend>
+      <section id="Graphical">
+        <script>
+          var params = {
+            appName: "Graphical",
+            showToolBar: true,
+            showAlgebraInput: true,
+            showMenuBar: true,
+          };
+          var applet = new GGBApplet(params, true);
+          window.addEventListener("load", function () {
+            applet.inject("Graphical");
+          });
+        </script>
+      </section>
+      <article>
+        <h2>Instructions:</h2>
+        <p>
+          To use the GeoGebra applet, simply click on the buttons in the toolbar
+          to access various tools and features. You can create geometric
+          constructions, perform calculations, and visualize mathematical
+          concepts interactively.
+        </p>
+        <p>
+          For more information, visit the
+          <a href="https://www.geogebra.org/">GeoGebra website</a>.
+        </p>
+        <p>
+          For more information about the applet, visit the
+          <a href="https://wiki.geogebra.org/en/Classic_6"
+            >GeoGebra Classic 6 wiki page</a
+          >.
+        </p>
+      </article>
+    </fieldset>
+    <footer> @ All Copy-Rights Reserved to <a href="https://github.com/AlienMinus">Minus</a></footer>
+  </body>
+</html>
